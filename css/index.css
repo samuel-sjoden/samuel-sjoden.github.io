@@ -1,0 +1,143 @@
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
+span.close-btn {
+    position: relative;
+    top: -20%;
+    right: -95%;
+    background-color: transparent;
+    font-size: 50px;
+    font-weight: bold;
+    width: 30px;
+    color: #333;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.close-btn:hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+.slideshow-container {
+    background-color: rgb(234, 221, 202);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.slideshow-container:hover {
+    transform: scale(1.02);
+}
+
+.mySlides {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.mySlides img {
+    max-width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.slide-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+.slide-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    max-width: 80%;
+    margin: 10px auto;
+}
+
+.footer {
+    background-color: tan;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+    color: #0077b5; 
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    transition: transform 0.3s;
+}
+
+.social-link:hover .social-icon {
+    transform: scale(1.2);
+}
+
+body {
+    margin: 0;
+    padding-bottom: 60px;
+}
+
+
+
+
+
+
+
+
