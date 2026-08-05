@@ -1,3 +1,6 @@
 [submodule "themes/ananke"]
 	path = themes/ananke
 	url = https://github.com/gohugo-ananke/ananke
+[submodule "themes/hello-friend"]
+	path = themes/hello-friend
+	url = git@github.com:rhazdon/hugo-theme-hello-friend-ng.git

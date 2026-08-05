@@ -1,8 +1,52 @@
 baseURL = 'https://example.org/'
 locale = 'en-us'
 title = "Sam's Blog"
-theme = 'ananke'
+theme = 'hello-friend'
+
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+[pagination]
+  disableAliases = false
+  pagerSize = 20
+  path = 'page'
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
 
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[params]
+brand = "Sam's Blog"
+description = "Sam's Blog"
+dateFormat = "Jan 2, 2006"
+homeSubtitle = "A Collection of My Projects, Interests, and Thoughts"
+
+disableReadOtherPosts = false
+enableThemeToggle = true 
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[menu]
+  [[menu.main]]
+    identifier  = "about"
+    name        = "About"
+    url         = "about/"
+    hasChildren = true
+  
+
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
